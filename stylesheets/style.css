@@ -1,0 +1,84 @@
+body {
+  background: url("background.jpg");
+  color: #f5f5f5;
+}
+header {
+  text-align: center;
+  margin-top: 100px;
+}
+header h1 {
+  font-weight: bold;
+  color: #f5f5f5
+}
+.center {
+  text-align: center;
+}
+.sterlings-links {
+  margin: 0 auto;
+  float: none;
+  width: 25%;
+}
+.sterlings-links a {
+  color: #f5f5f5;
+  font-size: 18px;
+}
+.sterlings-links .facebook {
+  transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -webkit-transition: background 0.25s ease-in-out;
+}
+.sterlings-links .facebook:hover,
+.sterlings-links .facebook:focus {
+  background: #1daced;
+  color: #f5f5f5;
+}
+.sterlings-links .github {
+  transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -webkit-transition: background 0.25s ease-in-out;
+}
+.sterlings-links .github:hover,
+.sterlings-links .github:focus {
+  background: #356aa0;
+  color: #f5f5f5;
+}
+.sterlings-links .codrspace {
+  transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -webkit-transition: background 0.25s ease-in-out;
+}
+.sterlings-links .codrspace:hover,
+.sterlings-links .codrspace:focus {
+  background: #cda92b;
+  color: #f5f5f5;
+}
+.sterlings-links .medium {
+  transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -webkit-transition: background 0.25s ease-in-out;
+}
+.sterlings-links .medium:hover,
+.sterlings-links .medium:focus {
+  background: #FFA500;
+  color: #f5f5f5;
+}
+.sterlings-links .ghost {
+  transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -webkit-transition: background 0.25s ease-in-out;
+}
+.sterlings-links .ghost:hover,
+.sterlings-links .ghost:focus {
+  background: #42d386;
+  color: #f5f5f5;
+}
+.sterlings-links .email {
+  transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -webkit-transition: background 0.25s ease-in-out;
+}
+.sterlings-links .email:hover,
+.sterlings-links .email:focus {
+  background: #6bba70;
+  color: #f5f5f5;
+}

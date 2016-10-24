@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> My Photo Gallery </title>
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel='stylesheet' href="test2.css">
+    <script>var elem = $('div');
+    var count = elem.length;
+    var loop = function(){
+
+    setTimeout(function(){
+    elem.each(function(){
+      var $this = $(this);
+      var height = (Math.random() * 30);
+      $this.css({
+        'bottom': height,
+        'height': height,
+        'width': '3px'
+      });
+    });
+    loop();
+    }, 400);
+
+    }
+    loop();</script>
+  </body>
+</head>
+<body>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+
+
+</html>

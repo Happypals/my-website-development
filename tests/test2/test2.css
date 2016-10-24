@@ -1,0 +1,25 @@
+
+body {
+  background-color: black;
+  padding: 150px 0 0 100px;
+}
+.bar {
+  background: #fff;
+  float: left;
+  height: 3px;
+  margin: 0 1px 0 0;
+  position: relative;
+  transition: all linear 500ms;
+  width: 3px;
+  color: #000;
+  -webkit-box-reflect: below -1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.35, transparent), to(black));
+}
+.testbutton{
+  padding: 8px 8px 8px 32px;
+    background: white;
+    height: 50px;
+    width: 30px;
+
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>canvas_triangle</title>
+<style>
+	body {
+		background-color: #555;
+	}
+	div#circle {
+		width: 78px;
+		height: 78px;
+		position:fixed;
+		margin: 300px 0 0 300px;
+		border: 2px solid black;
+		border-radius: 50%;
+		padding-top: 3px;
+		padding-left: 3px;
+		background-color: #333;
+	}
+	canvas#myCanvas {
+		border: 2px solid black;
+		position: static;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 50%;
+
+	}
+	canvas.still {
+		-webkit-transform: rotate(0deg);
+		-webkit-transition-property: -webkit-transform;
+		-webkit-transition-duration: 1s;
+		-webkit-transition-timing-function: ease-in-out;
+		transform: rotate(0deg);
+		transition-property: transform;
+		transition-duration: 1s;
+		transition-timing-function: ease-in-out;
+
+	}
+	@keyframes glow {
+		0% {box-shadow: none;}
+		50% {box-shadow: 0 0 0px 3px teal;}
+		100% {box-shadow: none;}
+	}
+	/*Causes the button to rotate when clicked, then begin
+	to glow using a box shadow*/
+	canvas.still.rotate {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(450deg);
+		box-shadow: none;
+		animation-name: glow;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+
+	}
+
+	.hidden {
+		display: none;
+	}
+	.show {
+		display: block;
+
+	
+</style>
+</head>
+<body>
+	<div id="circle">
+		<canvas id="myCanvas" onclick="myFunction()" width="72" height="72" class="still"></canvas>
+	</div>
+	
+	<script>
+		//make the button rotate
+		function myFunction() {
+		document.getElementById("myCanvas").classList.toggle("rotate");
+		}
+
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+
+		var grd=ctx.createRadialGradient(36,36,0,36,36,72);
+		grd.addColorStop(0, "grey");
+		grd.addColorStop(1, "black");
+
+		//Apply gradient to circle
+		ctx.fillStyle=grd;
+		ctx.fillRect(0,0,72,72);
+
+		/*var linGrd=createLinearGradient(22.15,28,59,45,)
+		linGrd.addColorStop(0, "red");
+		linGrd.addColorStop(1, "blue");*/
+		//Draw triangle in circle
+		ctx.beginPath();
+		ctx.moveTo(22.15, 12);
+		ctx.lineTo(22.15, 60);
+		ctx.lineTo(63.71, 36 );
+		ctx.lineTo(22.15,12);
+		ctx.stroke();
+		ctx.fillStyle="teal";
+		ctx.fill();
+
+
+
+	</script>
+</body>
+</html>
